@@ -33,15 +33,8 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Web Developer", "Programer", "Student", "Fresher"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
-    var typed = new Typed(".typing-2", {
-        strings: ["Web Developer", "Programer", "Student", "Fresher"],
-        typeSpeed: 100,
+        strings: ["Fresher", "Java Developer", "Python Developer", "Backend Developer"],
+        typeSpeed: 50,
         backSpeed: 60,
         loop: true
     });

@@ -36,7 +36,7 @@ section{
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Finger Paint', cursive;
     
 }
 .about .about-content,
@@ -55,7 +55,7 @@ section .title{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Finger Paint', cursive;
 }
 section .title::before{
     content: "";
@@ -84,7 +84,7 @@ section .title::after{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Finger Paint', cursive;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -172,7 +172,7 @@ section .title::after{
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Finger Paint', cursive;
 }
 .home .max-width{
   width: 100%;
@@ -259,20 +259,35 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .contact{
-    color:#fff;
+.services, .contact {
+    color: #fff;
     background: #111;
 }
+
 .services .title::before,
-.contact .title::before{
+.contact .title::before {
     background: #fff;
 }
+
 .services .title::after,
-.contact .title::after{
+.contact .title::after {
     background: #111;
-    content: "what i provide";
+    content: "what i develop";
 }
-.services .serv-content .card{
+
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adds space below the row of cards */
+}
+
+.services .serv-content.center-content {
+    justify-content: center;
+    margin-top: 30px; /* Adds space above the centered card */
+}
+
+.services .serv-content .card {
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -280,25 +295,32 @@ section .title::after{
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
-.services .serv-content .card:hover{
+
+.services .serv-content .card:hover {
     background: rgb(220, 47, 20);
 }
-.services .serv-content .card .box{
+
+.services .serv-content .card .box {
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+
+.services .serv-content .card:hover .box {
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+
+.services .serv-content .card i {
     font-size: 50px;
     color: rgb(220, 47, 20);
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+
+.services .serv-content .card:hover i {
     color: #fff;
 }
-.services .serv-content .card .text{
+
+.services .serv-content .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -439,7 +461,7 @@ section .title::after{
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Finger Paint', cursive;
     transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
